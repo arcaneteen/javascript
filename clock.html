@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Clock project</title>
+        <meta charset="utf-8">
+        <style>
+            body{
+                background-color:rgb(99, 185, 231);
+            }
+            .box{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 24px;
+                color:white;
+                border: 3px solid rgb(17, 3, 51);
+                border-radius:18px;
+                width:40%;
+               
+                margin:0px auto;
+                text-align: center;
+                background-color: rgb(191, 34, 128);
+                letter-spacing: 5px;
+                position: relative;
+                margin-top:20%;
+                padding:40px 0;
+
+            }
+            h1{
+                text-align:center;
+                margin:12px auto;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Clock Project</h1>
+        <div id="clockBlock" class="box">
+        <script type="text/javascript">
+        function getClock() {
+            
+            var date=new Date();//date is a reference variable which creates a new object for Date() method
+            var h=date.getHours();
+            var m=date.getMinutes();
+            var s=date.getSeconds();
+            var session="AM";
+
+            if(h==12){
+                h=0;
+            }
+            if(h>12){
+                h=h-12;
+                session="PM";
+            }
+
+            h=(h<=9)?"0"+h:h;
+            m=(m<=9)?"0"+m:m;
+            s=(s<=9)?"0"+s:s;
+
+
+            document.getElementById("clockBlock").innerHTML= h+":"+m+":"+s+" "+session;
+            setTimeout(getClock,1000);
+
+        }
+        getClock();
+        </script>
+        </div>
+    </body>
+
+</html>
