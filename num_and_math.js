@@ -13,11 +13,11 @@ console.log(hundreds.toLocaleString('en-IN'));
 
 //++++++++++MAths+++++++
 
-console.log(Math.abs(-4));
-console.log(Math.round(8.76));
-console.log(Math.ceil(4.2));
-console.log(Math.floor(8.9));
-console.log(Math.sinh(6));
+console.log(Math.abs(-4));//always positive
+console.log(Math.round(8.76));//round off
+console.log(Math.ceil(4.2));//greater val
+console.log(Math.floor(8.9));//smaller one
+console.log(Math.sinh(6));///don't know
 console.log(Math.min(4,8,9,08));
 console.log(Math.random());//0-1 range by default
 

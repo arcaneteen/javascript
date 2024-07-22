@@ -24,7 +24,7 @@ function chai(){
     console.log(this.username);
 }
 chai();
-//console.log(this.chai);
+console.log(this.chai);
 
 const chaichai = () => {
     let username="k"
@@ -45,3 +45,14 @@ console.log(namee("k"));
 
 const myArray =[2,4,67,9];
 myArray.forEach((i) => console.log(i));
+
+//idk part
+const arrrui= [78,298,2]
+
+const rui={
+    usermesssage:((ele)=>{
+        console.log(`what is this: ${arrrui[ele]}`);
+    })
+}
+
+rui.usermesssage()

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom</title>
+</head>
+<body style="background-color: black; color:#fff;">
+
+    
+</body>
+<script>
+    //creating new ele
+    const div=document.createElement('div')
+    console.log(div)
+    div.className="main"
+    div.id=Math.round(Math.random()*10 +1)
+    div.setAttribute("title","generated title")
+    div.style.backgroundColor="pink";
+    div.style.padding="12px";
+    //div.innerText="hello";//val lekr aata h and override krta
+    const addText=document.createTextNode("Khushfushi");
+    //div is inside the memory not attached to pg so we have to
+    div.appendChild(addText);
+    //document k body k andar child append krna
+    document.body.appendChild(div)
+</script>
+</html>
