@@ -18,7 +18,7 @@ console.log(Math.round(8.76));//round off
 console.log(Math.ceil(4.2));//greater val
 console.log(Math.floor(8.9));//smaller one
 console.log(Math.sinh(6));///don't know
-console.log(Math.min(4,8,9,08));
+console.log(Math.min(4,8,9,8));
 console.log(Math.random());//0-1 range by default
 
 console.log(Math.random()*10+1);//Range:1-10 -->adding 1 to avoid 0 cases or close to 0

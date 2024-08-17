@@ -42,7 +42,7 @@ console.log(typeof myfunc)//function object
 let myProgress="..working";
 let another=myProgress;//you get a copy of the variable
 another="true?";
-console.log(myProgress);
+console.log(another);
 
 let user1={
     emailId:"kk@gmail.com",
@@ -55,5 +55,5 @@ user2.emailId="k@mail.com";
 console.log(user1.emailId);
 
 let name="khushi";
-console.log(`Hello my name is ${name} and my repoCount is ${0}`);
+console.log(`Hello my name is ${name} and my profile is ${user1.url}`);
 

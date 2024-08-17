@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const div=document.createElement('div');
+        div.id="main";
+        div.style.padding="20% 40%"
+        div.style.paddingBottom="0%"
+        // div.style.display="flex"
+        div.style.margin="0 auto"
+        div.style.textAlign="center"
+        div.innerText="Local Time"
+        // const addtext=createTextNode('Local Time');
+        // div.appendChild(addText);
+        document.body.appendChild(div)
+        const span=document.createElement('span');
+        span.id="timee";
+        span.style.padding="4% 1%"
+        span.style.display="block"
+        span.style.border="2px solid red"
+        span.style.backgroundColor="orange";
+        span.style.textAlign="center"
+       // div.innerText="Local Time"
+        // const addtext=createTextNode('Local Time');
+        // div.appendChild(addText);
+        document.body.appendChild(span);
+
+        const time=document.getElementById('timee');
+        
+        setInterval(function(){
+            const date=new Date();
+            const localTime=date.toLocaleTimeString();
+            time.innerHTML=localTime;
+        },1000)
+
+        
+        
+        
+
+    </script>
+</body>
+</html>
